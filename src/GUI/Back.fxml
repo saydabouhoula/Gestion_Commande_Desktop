@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.BackController">
+   <children>
+      <VBox layoutX="16.0" layoutY="54.0" prefHeight="332.0" prefWidth="149.0">
+         <children>
+            <Label fx:id="dashboard" prefHeight="40.0" prefWidth="87.0" text="     DashBoard" />
+            <Button fx:id="user" mnemonicParsing="false" onAction="#btnuser" prefHeight="43.0" prefWidth="159.0" text="Gestion Utilisateur" />
+            <Button fx:id="produit" mnemonicParsing="false" onAction="#btnproduit" prefHeight="41.0" prefWidth="148.0" text="Gestion Produits" />
+            <Button fx:id="commande" mnemonicParsing="false" onAction="#btncommande" prefHeight="48.0" prefWidth="148.0" text="Gestion Commandes" />
+            <Button fx:id="livraison" mnemonicParsing="false" onAction="#btnlivraison" prefHeight="43.0" prefWidth="148.0" text="Gestion Livraisons" />
+            <Button fx:id="reclamation" mnemonicParsing="false" onAction="#btnreclamation" prefHeight="45.0" prefWidth="148.0" text="Gestion Reclamations" />
+            <Button fx:id="evenement" mnemonicParsing="false" onAction="#btnevenement" prefHeight="46.0" prefWidth="148.0" text="Gestion Evénements" />
+         </children>
+      </VBox>
+      <Label fx:id="idcommandes" layoutX="236.0" layoutY="37.0" text="Gestion Commandes" />
+      <TableView fx:id="tableviewcom" layoutX="179.0" layoutY="94.0" prefHeight="189.0" prefWidth="416.0">
+        <columns>
+          <TableColumn fx:id="colcom" prefWidth="90.0" text="ID Commande" />
+          <TableColumn fx:id="coluser" prefWidth="88.0" text="Utilisateur" />
+            <TableColumn fx:id="coldate" prefWidth="103.0" text="Date Creation" />
+            <TableColumn fx:id="colstatus" prefWidth="134.0" text="Status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

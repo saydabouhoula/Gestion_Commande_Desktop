@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MesCommandesController">
+   <children>
+      <TableView fx:id="tvComande" layoutX="52.0" layoutY="75.0" onMouseClicked="#fnCommandeSelected" prefHeight="266.0" prefWidth="497.0">
+        <columns>
+          <TableColumn fx:id="colDateCreat" prefWidth="91.0" text="Date_creation" />
+          <TableColumn fx:id="colStatus" prefWidth="59.0" text="status" />
+            <TableColumn fx:id="colPaymentMeth" prefWidth="116.0" text="payement_method" />
+            <TableColumn fx:id="colPaymentBrand" prefWidth="116.0" text="payement_brand" />
+            <TableColumn fx:id="colPaymentStatus" prefWidth="116.0" text="payement_status" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnRetour" layoutX="29.0" layoutY="350.0" mnemonicParsing="false" onAction="#fnRetour" prefHeight="33.0" prefWidth="68.0" style="-fx-background-color: #d76f08;" text="Retour" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnDetails" layoutX="494.0" layoutY="350.0" mnemonicParsing="false" onAction="#fnDetails" prefHeight="33.0" prefWidth="68.0" style="-fx-background-color: #d76f08;" text="Details" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Label fx:id="lbidComnade" layoutX="171.0" layoutY="27.0" visible="false" />
+      <TextField fx:id="tfRechercher" layoutX="52.0" layoutY="32.0" prefHeight="25.0" prefWidth="218.0" />
+      <ComboBox fx:id="cbStatus" layoutX="287.0" layoutY="32.0" prefWidth="150.0" />
+      <Button fx:id="btnFilter" layoutX="444.0" layoutY="28.0" mnemonicParsing="false" onAction="#fnFiltrer" prefHeight="33.0" prefWidth="68.0" style="-fx-background-color: #d76f08;" text="Filtrer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnReset" layoutX="515.0" layoutY="28.0" mnemonicParsing="false" onAction="#fnReset" prefHeight="33.0" prefWidth="68.0" style="-fx-background-color: #d76f08;" text="Reset" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Saida.jnlp">
+  <information>
+    <title>Saida</title>
+    <vendor>houss</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Saida.jar" size="59617" download="eager" />
+    <jar href="lib\commons-lang3-3.12.0.jar" size="587402" download="eager" />
+    <jar href="lib\controlsfx-8.40.11.jar" size="985420" download="eager" />
+    <jar href="lib\javax.mail-1.6.1.jar" size="654100" download="eager" />
+    <jar href="lib\javax.mail.jar" size="659033" download="eager" />
+    <jar href="lib\mysql-connector-java-8.0.23.jar" size="2415211" download="eager" />
+    <jar href="lib\zxing-javase.jar" size="14542" download="eager" />
+    <jar href="lib\zxing.jar" size="191436" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Saida" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="saida.Saida"  name="Saida" />
+  <update check="always"/>
+</jnlp>
